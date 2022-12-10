@@ -1,0 +1,67 @@
+{
+  "name": "mytop100movies",
+  "version": "1.0.0",
+  "description": "App lets the user to add his best movies and rate them.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "prod": "node server.js",
+    "test": "mocha --exit",
+    "coverage": "c8 --r html -r text --all  -x 'public/**' -x 'server.js' -x 'controller/errorController.js' -x 'coverage/**' --check-coverage npm test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwambajeddy/myTop100Movies"
+  },
+  "keywords": [
+    "top100",
+    "movies",
+    "moviesList"
+  ],
+  "author": "eddy uwambaje",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uwambajeddy/myTop100Movies/issues"
+  },
+  "homepage": "https://github.com/uwambajeddy/myTop100Movies#readme",
+  "engines": {
+    "node": "^14.18.1",
+    "npm": "6.14.15"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "axios": "^0.27.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/chai-http": "^4.2.0",
+    "c8": "^7.11.2",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0",
+    "parcel": "^2.5.0",
+    "prettier": "^2.6.2"
+  }
+}
